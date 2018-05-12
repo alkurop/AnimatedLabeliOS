@@ -24,18 +24,39 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WuT-Qf-nfz" customClass="AnimTypeTextField" customModule="AnimDelayLabel">
+                                <rect key="frame" x="22" y="366" width="320" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Um8-uu-NxW" customClass="AnimTypeTextView" customModule="AnimDelayLabel">
+                                <rect key="frame" x="6" y="420" width="361" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Um8-uu-NxW" firstAttribute="top" secondItem="WuT-Qf-nfz" secondAttribute="bottom" constant="24" id="6sm-Rc-P7g"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="34Q-FL-NrP" secondAttribute="bottom" constant="456" id="9dE-ac-YUq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="34Q-FL-NrP" secondAttribute="trailing" id="ASG-Pt-nRZ"/>
                             <constraint firstItem="34Q-FL-NrP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="170" id="FUn-Jb-B1N"/>
+                            <constraint firstItem="WuT-Qf-nfz" firstAttribute="top" secondItem="34Q-FL-NrP" secondAttribute="bottom" constant="155" id="Gxg-eK-twf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Um8-uu-NxW" secondAttribute="trailing" constant="8" id="SUF-SH-mqo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Um8-uu-NxW" secondAttribute="bottom" constant="119" id="WTJ-20-dpX"/>
+                            <constraint firstItem="Um8-uu-NxW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="6" id="aQh-mI-8za"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WuT-Qf-nfz" secondAttribute="trailing" constant="33" id="cw5-U8-uZs"/>
+                            <constraint firstItem="WuT-Qf-nfz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="22" id="fb0-5E-Z8M"/>
                             <constraint firstItem="34Q-FL-NrP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pSF-t2-dCd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="label" destination="34Q-FL-NrP" id="Smm-kE-Trs"/>
+                        <outlet property="textField" destination="WuT-Qf-nfz" id="t4d-fl-SJJ"/>
+                        <outlet property="textView" destination="Um8-uu-NxW" id="XPf-p7-AUO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

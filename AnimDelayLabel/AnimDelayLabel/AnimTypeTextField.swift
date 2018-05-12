@@ -1,23 +1,23 @@
 //
-//  AnimTypeLabel.swift
-//  AnimTypeLabelDemo
+//  AnimTypeTextArea.swift
+//  AnimDelayLabel
 //
-//  Created by Alexey Kuropiantnyk on 11/05/2018.
+//  Created by Alexey Kuropiantnyk on 12/05/2018.
 //  Copyright © 2018 Alexey Kuropiantnyk. All rights reserved.
 //
 
 import Foundation
-import UIKit
 import RxSwift
+import UIKit
 
-public class AnimTypeLabel : UILabel {
+public class AnimTypeTextField: UITextField {
     let millisInSeconds = 10000
     let ioScheduler = ConcurrentDispatchQueueScheduler(qos: DispatchQoS.background)
     let mainScheduler = MainScheduler.instance
     
     var previousAnimationDisposable: Disposable?
     var currentText: String?
-
+    
     public func setAnimatedText (text: String?, delayMicros: Int = 40, _ handle : (() -> ())? = nil) {
         
         if currentText == text { return }
@@ -55,13 +55,5 @@ public class AnimTypeLabel : UILabel {
     override public func willMove(toSuperview newSuperview: UIView?) {
         forceCompleteAnimation()
         super.willMove(toSuperview: newSuperview)
-    }
-}
-
-extension String {
-    subscript (bounds: CountableRange<Int>) -> String {
-        let start = index(startIndex, offsetBy: bounds.lowerBound)
-        let end = index(startIndex, offsetBy: bounds.upperBound)
-        return String(self[start..<end])
     }
 }

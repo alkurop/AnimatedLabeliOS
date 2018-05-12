@@ -11,6 +11,8 @@
 		433CEBD020A615BB00E13011 /* AnimDelayLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 433CEBCE20A615BB00E13011 /* AnimDelayLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		433CEBD920A6171F00E13011 /* AnimTypeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433CEBD820A6171F00E13011 /* AnimTypeLabel.swift */; };
 		433CEBDC20A6175600E13011 /* Pods_AnimTypeLabelDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 433CEBDB20A6175600E13011 /* Pods_AnimTypeLabelDemo.framework */; };
+		436C72AF20A6C5B6006A6148 /* AnimTypeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436C72AE20A6C5B6006A6148 /* AnimTypeTextField.swift */; };
+		436C72B120A6C64A006A6148 /* AnimTypeTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436C72B020A6C64A006A6148 /* AnimTypeTextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		433CEBCF20A615BB00E13011 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		433CEBD820A6171F00E13011 /* AnimTypeLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimTypeLabel.swift; sourceTree = "<group>"; };
 		433CEBDB20A6175600E13011 /* Pods_AnimTypeLabelDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_AnimTypeLabelDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		436C72AE20A6C5B6006A6148 /* AnimTypeTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimTypeTextField.swift; sourceTree = "<group>"; };
+		436C72B020A6C64A006A6148 /* AnimTypeTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimTypeTextView.swift; sourceTree = "<group>"; };
 		78E94999279B8D86D3A3269D /* Pods-AnimDelayLabel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimDelayLabel.release.xcconfig"; path = "../Pods/Target Support Files/Pods-AnimDelayLabel/Pods-AnimDelayLabel.release.xcconfig"; sourceTree = "<group>"; };
 		EABB7AEBB1AC1C90B8295AFA /* Pods_AnimDelayLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimDelayLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -61,6 +65,8 @@
 				433CEBCE20A615BB00E13011 /* AnimDelayLabel.h */,
 				433CEBCF20A615BB00E13011 /* Info.plist */,
 				433CEBD820A6171F00E13011 /* AnimTypeLabel.swift */,
+				436C72AE20A6C5B6006A6148 /* AnimTypeTextField.swift */,
+				436C72B020A6C64A006A6148 /* AnimTypeTextView.swift */,
 			);
 			path = AnimDelayLabel;
 			sourceTree = "<group>";
@@ -183,6 +189,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				436C72AF20A6C5B6006A6148 /* AnimTypeTextField.swift in Sources */,
+				436C72B120A6C64A006A6148 /* AnimTypeTextView.swift in Sources */,
 				433CEBD920A6171F00E13011 /* AnimTypeLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -323,7 +331,11 @@
 				INFOPLIST_FILE = AnimDelayLabel/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexkurop.AnimDelayLabel;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -345,7 +357,11 @@
 				INFOPLIST_FILE = AnimDelayLabel/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexkurop.AnimDelayLabel;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
