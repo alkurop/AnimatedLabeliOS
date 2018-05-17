@@ -42,7 +42,16 @@ public class AnimTypeTextView: UITextView {
     
     func forceCompleteAnimation() {
         previousAnimationDisposable?.dispose();
-        currentText = nil
         self.text = currentText
+    }
+    
+    override public func willMove(toWindow newWindow: UIWindow?) {
+        forceCompleteAnimation()
+        super.willMove(toWindow: newWindow)
+    }
+    
+    override public func willMove(toSuperview newSuperview: UIView?) {
+        forceCompleteAnimation()
+        super.willMove(toSuperview: newSuperview)
     }
 }
