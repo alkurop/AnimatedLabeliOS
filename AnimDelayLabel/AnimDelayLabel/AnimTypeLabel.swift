@@ -22,6 +22,7 @@ public class AnimTypeLabel : UILabel {
         
         if currentText == text { return }
         forceCompleteAnimation()
+        currentText = text
         guard let input = text else { return }
         if input.count == 0 { return }
         
@@ -33,28 +34,16 @@ public class AnimTypeLabel : UILabel {
         
         previousAnimationDisposable = processText
             .observeOn(mainScheduler)
-            .subscribe {
-                [weak self] value in
-                self?.setText(value.element)
+            .subscribe(onNext: { [weak self] text in
+                self?.text = text
                 handle?()
-        }
+            })
     }
-    
-    func setText (_ value: String?) { if let text = value {self.text = text } }
     
     func forceCompleteAnimation() {
         previousAnimationDisposable?.dispose();
-        setText(currentText)
-    }
-    
-    override public func willMove(toWindow newWindow: UIWindow?) {
-        forceCompleteAnimation()
-        super.willMove(toWindow: newWindow)
-    }
-    
-    override public func willMove(toSuperview newSuperview: UIView?) {
-        forceCompleteAnimation()
-        super.willMove(toSuperview: newSuperview)
+        currentText = nil
+        self.text = currentText
     }
 }
 
