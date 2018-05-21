@@ -13,6 +13,7 @@
 		433CEBDC20A6175600E13011 /* Pods_AnimTypeLabelDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 433CEBDB20A6175600E13011 /* Pods_AnimTypeLabelDemo.framework */; };
 		436C72AF20A6C5B6006A6148 /* AnimTypeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436C72AE20A6C5B6006A6148 /* AnimTypeTextField.swift */; };
 		436C72B120A6C64A006A6148 /* AnimTypeTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436C72B020A6C64A006A6148 /* AnimTypeTextView.swift */; };
+		612FF0F08E6B086D0DF6E6E6 /* TextAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612FF8AF36B0FF945C80FE78 /* TextAnimator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		433CEBDB20A6175600E13011 /* Pods_AnimTypeLabelDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_AnimTypeLabelDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		436C72AE20A6C5B6006A6148 /* AnimTypeTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimTypeTextField.swift; sourceTree = "<group>"; };
 		436C72B020A6C64A006A6148 /* AnimTypeTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimTypeTextView.swift; sourceTree = "<group>"; };
+		612FF8AF36B0FF945C80FE78 /* TextAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextAnimator.swift; sourceTree = "<group>"; };
 		78E94999279B8D86D3A3269D /* Pods-AnimDelayLabel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimDelayLabel.release.xcconfig"; path = "../Pods/Target Support Files/Pods-AnimDelayLabel/Pods-AnimDelayLabel.release.xcconfig"; sourceTree = "<group>"; };
 		EABB7AEBB1AC1C90B8295AFA /* Pods_AnimDelayLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimDelayLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -67,6 +69,7 @@
 				433CEBD820A6171F00E13011 /* AnimTypeLabel.swift */,
 				436C72AE20A6C5B6006A6148 /* AnimTypeTextField.swift */,
 				436C72B020A6C64A006A6148 /* AnimTypeTextView.swift */,
+				612FF8AF36B0FF945C80FE78 /* TextAnimator.swift */,
 			);
 			path = AnimDelayLabel;
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 				436C72AF20A6C5B6006A6148 /* AnimTypeTextField.swift in Sources */,
 				436C72B120A6C64A006A6148 /* AnimTypeTextView.swift in Sources */,
 				433CEBD920A6171F00E13011 /* AnimTypeLabel.swift in Sources */,
+				612FF0F08E6B086D0DF6E6E6 /* TextAnimator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
